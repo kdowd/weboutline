@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+			rel="stylesheet" />
+		<style>
+			html,
+			body {
+				background-color: #d1d6da;
+				min-height: 100vh;
+				margin: 0;
+				font-family: 'Poppins', sans-serif;
+			}
+
+			.content {
+				margin: 2rem 2rem;
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				place-items: start;
+				gap: 2rem;
+			}
+
+			@media (width > 768px) {
+				.content {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			@media (width > 980px) {
+				.content {
+					grid-template-columns: repeat(3, 1fr);
+				}
+
+				.content div:last-of-type {
+					grid-column: 1 / -1;
+				}
+			}
+
+			@media (width > 1200px) {
+				.content {
+					grid-template-columns: repeat(4, 1fr);
+				}
+				.content div:last-of-type {
+					grid-column: auto;
+				}
+			}
+
+			.col {
+				min-height: 100vh;
+				width: 100%;
+				margin: 0;
+				background-color: #bed5d5;
+			}
+
+			ul {
+				display: grid;
+				grid-auto-flow: row;
+				row-gap: 2rem;
+				font-size: 20px;
+				font-weight: 300;
+				list-style-type: auto;
+			}
+
+			li {
+				margin-right: 0.1rem;
+			}
+
+			li p {
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 18px;
+				margin: 0.5rem 0;
+				background-color: rgba(255, 248, 220, 0.25);
+				padding: 1rem;
+				border-radius: 6px;
+				color: black;
+				margin-right: 1rem;
+			}
+
+			h1,
+			h3 {
+				text-align: center;
+				background-color: black;
+				padding: 2rem;
+				color: snow;
+				margin: 0;
+			}
+
+			.col h3 {
+				color: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Web Course (WIP)</h1>
+		</header>
+
+		<div class="content">
+			<div class="col">
+				<h3>Front-End Dev</h3>
+				<ul>
+					<li>HTML</li>
+					<li>
+						CSS
+						<p>CSS Layout with Grid & Flexbox</p>
+					</li>
+					<li>
+						Basic Wireframing/Prototyping
+						<p>Figma etc...</p>
+					</li>
+					<li>
+						Responsive Web Design
+						<p>Mobile,Tablet,Desktop</p>
+					</li>
+					<li>
+						CSS Preprocessors
+						<p>SASS</p>
+					</li>
+					<li>Intro to Programming with JavaScript</li>
+
+					<li>
+						Intro to Git
+						<p>Create a public facing website with Git Pages</p>
+					</li>
+					<li>
+						CSS Frameworks
+						<p>BootStrap, Components</p>
+					</li>
+					<li>
+						Browser Developer Tools
+						<p>Chrome/FirefoxDev Tools. Tracing Network Requests</p>
+						<p>Debugging</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Application Dev</h3>
+				<ul>
+					<li>Intro to JS Frameworks</li>
+					<li>React or Vue or similar</li>
+					<li>
+						Modern JavaScript
+						<p>ES6</p>
+					</li>
+					<li>
+						Using JSON
+						<p>Dynamic UI's</p>
+					</li>
+					<li>The MERN Stack or similar</li>
+					<li>
+						Overview of Backend Development
+						<p>REST</p>
+					</li>
+					<li>
+						Intro to NoSQL / Atlas Mongo DB
+						<p>Configure, Secure & Share</p>
+						<p>Create Database and Collections</p>
+					</li>
+					<li>
+						Middleware - Connecting to Databases
+						<p>Node/Node Express/Mongoose</p>
+					</li>
+					<li>
+						CRUD & REST API's
+						<p>Endpoints for CRUD</p>
+					</li>
+
+					<li>
+						Testing REST Endpoints
+						<p>Postman/Insomnia</p>
+					</li>
+					<li>
+						Single Page Apps
+						<p>SPA's with Vite, Create React App etc..</p>
+					</li>
+					<li>
+						Web Security
+						<p>Authentication with Auth0 or JSON WebTokens</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Back-End Dev</h3>
+				<ul>
+					<li>Introduction to Databases</li>
+					<li>Relational vs NoSQL</li>
+					<li>
+						Local Install MySQL
+						<p>XAMPP & PHPMyAdmin</p>
+						<p>Manage DB via Terminal</p>
+					</li>
+					<li>
+						Normalization with MySQL
+						<p>First,Second & Third</p>
+					</li>
+					<li>
+						SQL with MySQL
+						<p>Primary Keys</p>
+						<p>Joins, Limits</p>
+						<p>CRUD with MySQL</p>
+					</li>
+					<li>
+						Database As A Service
+						<p>Amazon RDS Free Tier / MySQL</p>
+					</li>
+
+					<li>Entity Relationship Modelling</li>
+					<li>
+						Database Integration in Web Dev
+						<p>PHP, PHP/Laraval or similar</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<h3>Agile Enterprise Project</h3>
+				<ul>
+					<li>
+						Project Planning
+						<p>Agile Manifesto</p>
+					</li>
+					<li>
+						Agile in Practice
+						<p>Product Owners, Sprints & Backlogs</p>
+					</li>
+					<li>
+						Agile Software
+						<p>Trello, Git, Teams</p>
+					</li>
+					<li>?</li>
+					<li>?</li>
+					<li>?</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
