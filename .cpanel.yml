@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kdowd/public_html/weboutline
+    - export DEPLOYPATH=/home/kdowd/public_html/weboutline/
     - /bin/cp index.html $DEPLOYPATH
